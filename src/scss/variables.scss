@@ -1,0 +1,82 @@
+%Montserrat{
+   font-family: 'Montserrat';
+   font-style: normal;
+}
+%MontserratBold {
+   @extend %Montserrat;
+   font-weight: 700;
+}
+%MontserratMedium{
+   @extend %Montserrat;
+   font-weight: 500;
+}
+%OpenSansRegular {
+   font-family: 'Open Sans';
+   font-style: normal;
+   font-weight: 400;
+}
+%nav-bar-title {
+   @extend %MontserratBold;
+   font-size: 10px;
+   line-height: 12px;
+   color: #5C6A79;
+   text-transform: uppercase;
+};
+%promo-title {
+   @extend %MontserratBold;
+   font-size: 18px;
+   line-height: 22px;
+   color: #1C2A39;
+   text-transform: uppercase;
+}
+%categories-title {
+   @extend %MontserratBold;
+   font-size: 16px;
+   line-height: 20px;
+   text-transform: capitalize;
+   color: #1C2A39;
+}
+%categories-subtitle {
+   @extend %MontserratMedium;
+   font-size: 12px;
+   line-height: 15px;
+   text-transform: capitalize;
+   color: #5C6A79;
+}
+%button-title{
+   @extend %MontserratBold;
+   font-size: 8px;
+   line-height: 10px;
+   text-transform: uppercase;
+   color: #4C3DB2;
+}
+%card-title {
+   @extend %MontserratBold;
+   font-size: 16px;
+   line-height: 20px;
+   color: #1C2A39;
+}
+%card-subtitle {
+   @extend %OpenSansRegular;
+   font-size: 10px;
+   line-height: 14px;
+   text-transform: capitalize;
+   color: #5C6A79;
+}
+%card-price {
+   @extend %MontserratBold;
+   font-size: 13px;
+   line-height: 16px;
+   text-transform: uppercase;
+   color: #1C2A39;
+}
+%flex-center {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+%flex-sb {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}

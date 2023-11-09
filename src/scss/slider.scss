@@ -1,0 +1,80 @@
+@import "variables";
+
+.slider__container {
+   .slider__body {
+      .slider__content {
+         .slider__images {
+            @extend %flex-center;
+            margin-bottom: 17px;
+            .slider__img {
+               min-width: 100%;
+               min-height: 100%;
+               filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            }
+         }
+         .slider__content-arrow {
+            .slider__content-pagination {
+               @extend %flex-center;
+               gap: 10px;
+               .content__pagination {
+                  list-style: none;
+                  .content__pagination-link {
+                     .slider__dot {
+                        &:hover{
+                           fill: #9E98DC;
+                        }
+                     }
+                  }
+               }
+            }
+         }
+         .slider__promo {
+            position: relative;
+            .promo__body-purple {
+               width: 149px;
+               height: 204px;
+               padding: 20px;
+               background: #9E98DC;
+               display: flex;
+               justify-content: end;
+               flex-direction: column;
+               position: absolute;
+               top: -653.5px;
+               right: -89px;
+               filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            }
+            .promo__body-pink {
+               width: 137px;
+               height: 273px;
+               padding: 20px;
+               background: #FF8FE6;
+               display: flex;
+               justify-content: end;
+               flex-direction: column;
+               position: absolute;
+               top: -373px;
+               right: -160px;
+               filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+               .title-pink {
+                  color: #1C2A39;
+               }
+            }
+            .promo__title {
+               @extend %promo-title;
+               margin-bottom: 4px;
+            }
+         }
+      }
+   }
+}
+
+.active {
+   fill: #9E98DC;
+}
+
+@media screen and (max-width: 1024px) {
+   .slider__promo {
+      display: none;
+   }
+   
+}

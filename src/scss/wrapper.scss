@@ -1,0 +1,69 @@
+@import "variables";
+
+.wrapper {
+   // @extend %flex-center;
+   // display: flex;
+   // flex-direction: column;
+   // align-items: center;
+   width: 1120px;
+}
+.container {
+   // width: 1120px;
+   margin-left: auto;
+   margin-right: auto;
+}
+.main {
+   margin-top: 116px;
+}
+
+@media screen and (max-width: 1024px) {
+   .wrapper {
+      width: 924px;
+   }
+}
+
+@media screen and (max-width: 924px) {
+   .wrapper {
+      width: 824px;
+   }
+}
+
+@media screen and (max-width: 900px) {
+   .wrapper {
+      width: 800px;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .wrapper {
+      width: 668px;
+   }
+   .main {
+      margin-top: 90px;
+   }
+}
+
+@media screen and (max-width: 680px) {
+   .wrapper {
+      width: 580px;
+   }
+}
+@media screen and (max-width: 580px) {
+   .wrapper {
+      width: 480px;
+   }
+}
+@media screen and (max-width: 425px) {
+   .wrapper {
+      width: 325px;
+   }
+   .main {
+      margin-top: 70px;
+   }
+}
+
+@media screen and (max-width: 320px) {
+   .wrapper {
+      width: 220px;
+   }
+}

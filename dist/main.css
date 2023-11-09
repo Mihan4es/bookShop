@@ -1,0 +1,1267 @@
+/*!**************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/style.scss ***!
+  \**************************************************************************************************************/
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  color: #5C6A79;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.massage__content-subtitle, .category__link .category__title, .list-books__card--price, .massage__content-title, .list-books__card--name, .active__category, .slider__container .slider__body .slider__content .slider__promo .promo__title, .menu__list-link {
+  font-family: "Montserrat";
+  font-style: normal;
+}
+
+.list-books__card--price, .massage__content-title, .list-books__card--name, .active__category, .slider__container .slider__body .slider__content .slider__promo .promo__title, .menu__list-link {
+  font-weight: 700;
+}
+
+.massage__content-subtitle, .category__link .category__title {
+  font-weight: 500;
+}
+
+.list-books__card--description, .list-books__card--autor {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.menu__list-link {
+  font-size: 10px;
+  line-height: 12px;
+  color: #5C6A79;
+  text-transform: uppercase;
+}
+
+.slider__container .slider__body .slider__content .slider__promo .promo__title {
+  font-size: 18px;
+  line-height: 22px;
+  color: #1C2A39;
+  text-transform: uppercase;
+}
+
+.active__category {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #1C2A39;
+}
+
+.category__link .category__title {
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: capitalize;
+  color: #5C6A79;
+}
+
+.massage__content-title, .list-books__card--name {
+  font-size: 16px;
+  line-height: 20px;
+  color: #1C2A39;
+}
+
+.list-books__card--description, .list-books__card--autor {
+  font-size: 10px;
+  line-height: 14px;
+  text-transform: capitalize;
+  color: #5C6A79;
+}
+
+.list-books__card--price {
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #1C2A39;
+}
+
+.slider__container .slider__body .slider__content .slider__content-arrow .slider__content-pagination, .slider__container .slider__body .slider__content .slider__images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__container {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 100;
+  left: 0;
+}
+
+.header__page {
+  height: 116px;
+  width: 1120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav-bar-menu .nav-bar__menu {
+  display: flex;
+  gap: 40px;
+}
+@media screen and (max-width: 768px) {
+  .header__nav-bar-menu .nav-bar__menu {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.menu__list {
+  list-style: none;
+}
+
+.active-link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #1C2A39;
+}
+
+.menu__list-link:hover {
+  color: #1C2A39;
+}
+
+.header__nav-bar-loby .nav-bar__loby {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-bar__loby-list {
+  list-style: none;
+  position: relative;
+}
+
+.nav-bar__loby-span {
+  display: none;
+}
+
+.nav-bar__loby-span-active {
+  width: 13px;
+  height: 13px;
+  display: block;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: -5px;
+  color: #FFF;
+  font-family: "Montserrat";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.menu__icon {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .menu__icon {
+    justify-self: flex-end;
+    z-index: 5;
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 21px;
+    cursor: pointer;
+  }
+  .menu__icon span, .menu__icon::before, .menu__icon::after {
+    left: 0;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: #0A2756;
+  }
+  .menu__icon::before, .menu__icon::after {
+    content: "";
+  }
+  .menu__icon::before {
+    top: 0;
+  }
+  .menu__icon::after {
+    bottom: 0;
+  }
+  .menu__icon span {
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
+  }
+}
+@media screen and (max-width: 320px) {
+  .menu__icon {
+    justify-self: auto;
+  }
+}
+
+.menu__icon.active__menu span {
+  transform: scale(0) translate(0px, -50%);
+}
+
+.menu__icon.active__menu::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0px, -50%);
+}
+
+.menu__icon.active__menu::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0px, 50%);
+}
+
+@media screen and (max-width: 1024px) {
+  .header__page {
+    width: 924px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__page {
+    width: 668px;
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    height: 90px;
+  }
+  .header__logo {
+    justify-self: flex-start;
+  }
+}
+@media screen and (max-width: 425px) {
+  .header__page {
+    width: 325px;
+    grid-template-columns: 4fr 1fr;
+    height: 70px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header__page {
+    width: 220px;
+    grid-template-columns: 6fr 1fr;
+  }
+  .header__logo-link-svg {
+    width: 60%;
+  }
+}
+.header__menu-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 250px;
+}
+@media screen and (max-width: 1024px) {
+  .header__menu-body {
+    gap: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__menu-body {
+    position: fixed;
+    z-index: 5;
+    top: 58px;
+    right: -100%;
+    width: 100%;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: right 0.3s ease 0s;
+    overflow: auto;
+    padding: 25px 0 25px 0;
+    gap: 25px;
+  }
+}
+
+.active__menu {
+  right: 0;
+}
+
+.massage__content-subtitle, .slider__container .slider__body .slider__content .slider__promo .promo__title, .active__category, .category__link .category__title, .massage__content-title, .list-books__card--name, .list-books__card--price, .menu__list-link {
+  font-family: "Montserrat";
+  font-style: normal;
+}
+
+.slider__container .slider__body .slider__content .slider__promo .promo__title, .active__category, .massage__content-title, .list-books__card--name, .list-books__card--price, .menu__list-link {
+  font-weight: 700;
+}
+
+.massage__content-subtitle, .category__link .category__title {
+  font-weight: 500;
+}
+
+.list-books__card--description, .list-books__card--autor {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.menu__list-link {
+  font-size: 10px;
+  line-height: 12px;
+  color: #5C6A79;
+  text-transform: uppercase;
+}
+
+.slider__container .slider__body .slider__content .slider__promo .promo__title {
+  font-size: 18px;
+  line-height: 22px;
+  color: #1C2A39;
+  text-transform: uppercase;
+}
+
+.active__category {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #1C2A39;
+}
+
+.category__link .category__title {
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: capitalize;
+  color: #5C6A79;
+}
+
+.massage__content-title, .list-books__card--name {
+  font-size: 16px;
+  line-height: 20px;
+  color: #1C2A39;
+}
+
+.list-books__card--description, .list-books__card--autor {
+  font-size: 10px;
+  line-height: 14px;
+  text-transform: capitalize;
+  color: #5C6A79;
+}
+
+.list-books__card--price {
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #1C2A39;
+}
+
+.slider__container .slider__body .slider__content .slider__content-arrow .slider__content-pagination, .slider__container .slider__body .slider__content .slider__images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 1120px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main {
+  margin-top: 116px;
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    width: 924px;
+  }
+}
+@media screen and (max-width: 924px) {
+  .wrapper {
+    width: 824px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .wrapper {
+    width: 800px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 668px;
+  }
+  .main {
+    margin-top: 90px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .wrapper {
+    width: 580px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .wrapper {
+    width: 480px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .wrapper {
+    width: 325px;
+  }
+  .main {
+    margin-top: 70px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .wrapper {
+    width: 220px;
+  }
+}
+.massage__content-subtitle, .slider__container .slider__body .slider__content .slider__promo .promo__title, .active__category, .category__link .category__title, .massage__content-title, .list-books__card--name, .list-books__card--price, .menu__list-link {
+  font-family: "Montserrat";
+  font-style: normal;
+}
+
+.slider__container .slider__body .slider__content .slider__promo .promo__title, .active__category, .massage__content-title, .list-books__card--name, .list-books__card--price, .menu__list-link {
+  font-weight: 700;
+}
+
+.massage__content-subtitle, .category__link .category__title {
+  font-weight: 500;
+}
+
+.list-books__card--description, .list-books__card--autor {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.menu__list-link {
+  font-size: 10px;
+  line-height: 12px;
+  color: #5C6A79;
+  text-transform: uppercase;
+}
+
+.slider__container .slider__body .slider__content .slider__promo .promo__title {
+  font-size: 18px;
+  line-height: 22px;
+  color: #1C2A39;
+  text-transform: uppercase;
+}
+
+.active__category {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #1C2A39;
+}
+
+.category__link .category__title {
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: capitalize;
+  color: #5C6A79;
+}
+
+.massage__content-title, .list-books__card--name {
+  font-size: 16px;
+  line-height: 20px;
+  color: #1C2A39;
+}
+
+.list-books__card--description, .list-books__card--autor {
+  font-size: 10px;
+  line-height: 14px;
+  text-transform: capitalize;
+  color: #5C6A79;
+}
+
+.list-books__card--price {
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #1C2A39;
+}
+
+.slider__container .slider__body .slider__content .slider__content-arrow .slider__content-pagination, .slider__container .slider__body .slider__content .slider__images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__container .slider__body .slider__content .slider__images {
+  margin-bottom: 17px;
+}
+.slider__container .slider__body .slider__content .slider__images .slider__img {
+  min-width: 100%;
+  min-height: 100%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.slider__container .slider__body .slider__content .slider__content-arrow .slider__content-pagination {
+  gap: 10px;
+}
+.slider__container .slider__body .slider__content .slider__content-arrow .slider__content-pagination .content__pagination {
+  list-style: none;
+}
+.slider__container .slider__body .slider__content .slider__content-arrow .slider__content-pagination .content__pagination .content__pagination-link .slider__dot:hover {
+  fill: #9E98DC;
+}
+.slider__container .slider__body .slider__content .slider__promo {
+  position: relative;
+}
+.slider__container .slider__body .slider__content .slider__promo .promo__body-purple {
+  width: 149px;
+  height: 204px;
+  padding: 20px;
+  background: #9E98DC;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  position: absolute;
+  top: -653.5px;
+  right: -89px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.slider__container .slider__body .slider__content .slider__promo .promo__body-pink {
+  width: 137px;
+  height: 273px;
+  padding: 20px;
+  background: #FF8FE6;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  position: absolute;
+  top: -373px;
+  right: -160px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.slider__container .slider__body .slider__content .slider__promo .promo__body-pink .title-pink {
+  color: #1C2A39;
+}
+.slider__container .slider__body .slider__content .slider__promo .promo__title {
+  margin-bottom: 4px;
+}
+
+.active {
+  fill: #9E98DC;
+}
+
+@media screen and (max-width: 1024px) {
+  .slider__promo {
+    display: none;
+  }
+}
+.massage__content-subtitle, .active__category, .category__link .category__title, .massage__content-title, .list-books__card--name, .list-books__card--price, .menu__list-link, .slider__container .slider__body .slider__content .slider__promo .promo__title {
+  font-family: "Montserrat";
+  font-style: normal;
+}
+
+.active__category, .massage__content-title, .list-books__card--name, .list-books__card--price, .menu__list-link, .slider__container .slider__body .slider__content .slider__promo .promo__title {
+  font-weight: 700;
+}
+
+.massage__content-subtitle, .category__link .category__title {
+  font-weight: 500;
+}
+
+.list-books__card--description, .list-books__card--autor {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.menu__list-link {
+  font-size: 10px;
+  line-height: 12px;
+  color: #5C6A79;
+  text-transform: uppercase;
+}
+
+.slider__container .slider__body .slider__content .slider__promo .promo__title {
+  font-size: 18px;
+  line-height: 22px;
+  color: #1C2A39;
+  text-transform: uppercase;
+}
+
+.active__category {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #1C2A39;
+}
+
+.category__link .category__title {
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: capitalize;
+  color: #5C6A79;
+}
+
+.massage__content-title, .list-books__card--name {
+  font-size: 16px;
+  line-height: 20px;
+  color: #1C2A39;
+}
+
+.list-books__card--description, .list-books__card--autor {
+  font-size: 10px;
+  line-height: 14px;
+  text-transform: capitalize;
+  color: #5C6A79;
+}
+
+.list-books__card--price {
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #1C2A39;
+}
+
+.slider__container .slider__body .slider__content .slider__images, .slider__container .slider__body .slider__content .slider__content-arrow .slider__content-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category__container {
+  margin-top: 105px;
+}
+@media screen and (max-width: 425px) {
+  .category__container {
+    margin-top: 30px;
+  }
+}
+
+.category__body {
+  position: absolute;
+  width: 416px;
+  left: 0px;
+  background: #EFEEF6;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 45px 0px 81px;
+}
+
+.category__content {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.active__category {
+  position: relative;
+}
+.active__category::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #756AD3;
+  left: -16px;
+  top: 6.5px;
+}
+
+.dropdown {
+  align-items: center;
+  border: 1px solid #4C3DB2;
+  border-radius: 16px;
+  padding: 10px 15px;
+  display: none;
+  justify-content: space-between;
+  color: #4C3DB2;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 425px) {
+  .dropdown {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .dropdown {
+    font-size: 7px;
+  }
+}
+
+.dropdown-label {
+  margin-right: 10px;
+}
+
+.dropdown-menu {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 50%;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #1C2A39;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+}
+@media screen and (max-width: 425px) {
+  .dropdown-menu {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .dropdown-menu {
+    font-size: 7px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .dropdown {
+    display: flex;
+  }
+  .category__body {
+    display: none;
+  }
+}
+.massage__content-subtitle, .massage__content-title, .list-books__card--name, .list-books__card--price, .menu__list-link, .slider__container .slider__body .slider__content .slider__promo .promo__title, .category__link .category__title, .active__category {
+  font-family: "Montserrat";
+  font-style: normal;
+}
+
+.massage__content-title, .list-books__card--name, .list-books__card--price, .menu__list-link, .slider__container .slider__body .slider__content .slider__promo .promo__title, .active__category {
+  font-weight: 700;
+}
+
+.massage__content-subtitle, .category__link .category__title {
+  font-weight: 500;
+}
+
+.list-books__card--description, .list-books__card--autor {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.menu__list-link {
+  font-size: 10px;
+  line-height: 12px;
+  color: #5C6A79;
+  text-transform: uppercase;
+}
+
+.slider__container .slider__body .slider__content .slider__promo .promo__title {
+  font-size: 18px;
+  line-height: 22px;
+  color: #1C2A39;
+  text-transform: uppercase;
+}
+
+.active__category {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #1C2A39;
+}
+
+.category__link .category__title {
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: capitalize;
+  color: #5C6A79;
+}
+
+.massage__content-title, .list-books__card--name {
+  font-size: 16px;
+  line-height: 20px;
+  color: #1C2A39;
+}
+
+.list-books__card--description, .list-books__card--autor {
+  font-size: 10px;
+  line-height: 14px;
+  text-transform: capitalize;
+  color: #5C6A79;
+}
+
+.list-books__card--price {
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #1C2A39;
+}
+
+.slider__container .slider__body .slider__content .slider__images, .slider__container .slider__body .slider__content .slider__content-arrow .slider__content-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.massage__content-subtitle, .massage__content-title, .list-books__card--name, .list-books__card--price, .menu__list-link, .slider__container .slider__body .slider__content .slider__promo .promo__title, .category__link .category__title, .active__category {
+  font-family: "Montserrat";
+  font-style: normal;
+}
+
+.massage__content-title, .list-books__card--name, .list-books__card--price, .menu__list-link, .slider__container .slider__body .slider__content .slider__promo .promo__title, .active__category {
+  font-weight: 700;
+}
+
+.massage__content-subtitle, .category__link .category__title {
+  font-weight: 500;
+}
+
+.list-books__card--description, .list-books__card--autor {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.menu__list-link {
+  font-size: 10px;
+  line-height: 12px;
+  color: #5C6A79;
+  text-transform: uppercase;
+}
+
+.slider__container .slider__body .slider__content .slider__promo .promo__title {
+  font-size: 18px;
+  line-height: 22px;
+  color: #1C2A39;
+  text-transform: uppercase;
+}
+
+.active__category {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #1C2A39;
+}
+
+.category__link .category__title {
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: capitalize;
+  color: #5C6A79;
+}
+
+.massage__content-title, .list-books__card--name {
+  font-size: 16px;
+  line-height: 20px;
+  color: #1C2A39;
+}
+
+.list-books__card--description, .list-books__card--autor {
+  font-size: 10px;
+  line-height: 14px;
+  text-transform: capitalize;
+  color: #5C6A79;
+}
+
+.list-books__card--price {
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #1C2A39;
+}
+
+.slider__container .slider__body .slider__content .slider__images, .slider__container .slider__body .slider__content .slider__content-arrow .slider__content-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 1120px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main {
+  margin-top: 116px;
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    width: 924px;
+  }
+}
+@media screen and (max-width: 924px) {
+  .wrapper {
+    width: 824px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .wrapper {
+    width: 800px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 668px;
+  }
+  .main {
+    margin-top: 90px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .wrapper {
+    width: 580px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .wrapper {
+    width: 480px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .wrapper {
+    width: 325px;
+  }
+  .main {
+    margin-top: 70px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .wrapper {
+    width: 220px;
+  }
+}
+.list-books__conteiner {
+  position: relative;
+  margin: 48px 0 74px 0;
+  bottom: -48px;
+}
+@media screen and (max-width: 425px) {
+  .list-books__conteiner {
+    margin: 0;
+  }
+}
+
+.list-books__body {
+  position: absolute;
+  right: 0;
+}
+
+.list-books__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 924px;
+  margin-left: auto;
+  gap: 85px 0;
+}
+@media screen and (max-width: 900px) {
+  .list-books__cards {
+    width: 100%;
+  }
+}
+
+.list-books__card {
+  display: flex;
+  width: 424px;
+  gap: 36px;
+}
+@media screen and (max-width: 900px) {
+  .list-books__card {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .list-books__card {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .list-books__card--image {
+    text-align: center;
+  }
+}
+
+.list-books__card--img {
+  width: 212px;
+  height: 327px;
+  background: #EEECEC;
+  box-shadow: 0px 24px 36px 0px rgba(53, 49, 84, 0.28);
+}
+
+.list-books__card--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.list-books__card--name {
+  margin: 4px 0;
+}
+
+.list-books__card--reviews {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.list-books__card--description {
+  margin: 16px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.list-books__card--button {
+  margin-top: 16px;
+  border: 1px solid #4C3DB2;
+  background-color: inherit;
+  width: 176px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4C3DB2;
+  font-family: "Montserrat";
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 425px) {
+  .list-books__card--button {
+    width: 100%;
+  }
+}
+
+.list-books__button {
+  margin-top: 68px;
+  display: flex;
+  justify-content: center;
+}
+
+.list-books__card--button-active {
+  border: 1px solid #EEEDF5;
+  margin-top: 16px;
+  background-color: inherit;
+  width: 176px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5C6A79;
+  font-family: "Montserrat";
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.stars {
+  display: inline-block;
+  font-size: 20px;
+}
+
+.stars:before {
+  content: "★";
+  color: grey;
+}
+
+.average-rating {
+  font-size: 18px;
+  color: grey;
+  margin-top: 5px;
+}
+
+.book-rating {
+  display: flex;
+  gap: 1px;
+}
+
+.star {
+  background-image: url(e376cccbc8f00d095ff1.svg);
+  width: 12px;
+  height: 12px;
+}
+
+.empty-star {
+  background-image: url(b7733d7fef79909394bf.svg);
+  width: 12px;
+  height: 12px;
+}
+
+.massage__content-subtitle, .massage__content-title, .menu__list-link, .slider__container .slider__body .slider__content .slider__promo .promo__title, .category__link .category__title, .active__category, .list-books__card--name, .list-books__card--price {
+  font-family: "Montserrat";
+  font-style: normal;
+}
+
+.massage__content-title, .menu__list-link, .slider__container .slider__body .slider__content .slider__promo .promo__title, .active__category, .list-books__card--name, .list-books__card--price {
+  font-weight: 700;
+}
+
+.massage__content-subtitle, .category__link .category__title {
+  font-weight: 500;
+}
+
+.list-books__card--autor, .list-books__card--description {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.menu__list-link {
+  font-size: 10px;
+  line-height: 12px;
+  color: #5C6A79;
+  text-transform: uppercase;
+}
+
+.slider__container .slider__body .slider__content .slider__promo .promo__title {
+  font-size: 18px;
+  line-height: 22px;
+  color: #1C2A39;
+  text-transform: uppercase;
+}
+
+.active__category {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #1C2A39;
+}
+
+.category__link .category__title {
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: capitalize;
+  color: #5C6A79;
+}
+
+.massage__content-title, .list-books__card--name {
+  font-size: 16px;
+  line-height: 20px;
+  color: #1C2A39;
+}
+
+.list-books__card--autor, .list-books__card--description {
+  font-size: 10px;
+  line-height: 14px;
+  text-transform: capitalize;
+  color: #5C6A79;
+}
+
+.list-books__card--price {
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #1C2A39;
+}
+
+.slider__container .slider__body .slider__content .slider__images, .slider__container .slider__body .slider__content .slider__content-arrow .slider__content-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message__conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+  height: 300px;
+}
+
+.massage__img {
+  width: 100px;
+  opacity: 0.5;
+}
+
+.massage__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.massage__content-subtitle {
+  font-size: 16px;
+  line-height: 20px;
+  color: #5C6A79;
+}
+
+/*# sourceMappingURL=main.css.map*/
