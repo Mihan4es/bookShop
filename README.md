@@ -18,4 +18,5 @@
 
 Слайдер автоматически пролистывает изображения каждые 5 секунд, а после последнего изображения вновь переключается на первое. Перелистывать изображения можно также с помощью точек под слайдером.
 
-https://lms-cdn.skillfactory.ru/assets/courseware/v1/c4393b5b029f8c0636a1ab390368a349/asset-v1:Skillfactory+FR+2020+type@asset+block/FRPRO_25.1_1_3.png
+![image](https://github.com/Mihan4es/bookShop/assets/141183140/eb963092-6a90-45ac-98fe-accec96b1fba)
+
